@@ -45,3 +45,4 @@ def turn(board)
 if valid_move? == true
   move
 end
+end
