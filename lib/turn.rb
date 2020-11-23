@@ -9,6 +9,18 @@ puts " #{board[6]} | #{board[7]} | #{board[8]} "
 
 end
 
+def input_to_index(user_input)
+  user_input.to_i - 1
+end
+
+def move(board, index, player = "X")
+  board[index] = player
+end
+
+def update_array_at_with(array, index, value)
+  array[index] = value
+end
+
 def position_taken?(board, index)
 if board[index] == " " or board[index] == "" or board[index] == (nil)
   return (false)
